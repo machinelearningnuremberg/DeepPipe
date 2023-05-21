@@ -58,7 +58,7 @@ python meta_test.py --dataset oboe --experiment_id oboe01 --test_id 10000iters -
 
 ## Run on Previous Checkpoints
 
-If you do not want to meta-train, you can use our checkpoints (already meta-trained DeepPipes):
+If you do not want to meta-train, you can use our checkpoints (already meta-trained DeepPipe surrogate):
 
 `
 python meta_test.py --dataset oboe --experiment_id DeepPipeTOboe
