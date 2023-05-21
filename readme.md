@@ -30,13 +30,25 @@ On Tensor-Oboe Meta-Dataset:
 python meta_train.py --dataset oboe --experiment_id oboe01
 `
 
+On Zap Meta-Dataset:
+
+`
+python meta_train.py --dataset zap --experiment_id zap01
+`
+
 ## Run Meta-Test
 
-On Tensor-Oboe Meta-Dataset:
+For meta-testing, you can specify the test_id for different meta-tests on the same meta-learned model. For instance meta-testing with 100 finetuning iterations (faster results), or 10000 iterations (more accurate results):
 
 `
-python meta_test.py --dataset oboe --experiment_id oboe01
+python meta_test.py --dataset oboe --experiment_id oboe01 --test_id 100iters --n_iters 100
 `
+
+`
+python meta_test.py --dataset oboe --experiment_id oboe01 --test_id 10000iters --n_iters 10000
+`
+
+
 
 ## Run Meta-Test on OpenML Benchmark
 
