@@ -1,0 +1,59 @@
+INFO:root:train: loss: 0.89 - noise: 0.68 - mse: 0.5180 valid: loss: 1.08 - noise: 0.77 - mse: 0.0162
+INFO:root:train: loss: 0.88 - noise: 0.67 - mse: 0.4687 valid: loss: 1.07 - noise: 0.75 - mse: 0.0172
+INFO:root:train: loss: 0.86 - noise: 0.65 - mse: 0.4289 valid: loss: 1.06 - noise: 0.74 - mse: 0.0165
+INFO:root:train: loss: 0.85 - noise: 0.64 - mse: 0.3914 valid: loss: 1.05 - noise: 0.73 - mse: 0.0167
+INFO:root:train: loss: 0.83 - noise: 0.62 - mse: 0.3520 valid: loss: 1.03 - noise: 0.72 - mse: 0.0152
+INFO:root:train: loss: 0.82 - noise: 0.61 - mse: 0.3194 valid: loss: 1.02 - noise: 0.70 - mse: 0.0151
+INFO:root:train: loss: 0.81 - noise: 0.59 - mse: 0.2890 valid: loss: 1.01 - noise: 0.69 - mse: 0.0150
+INFO:root:train: loss: 0.79 - noise: 0.58 - mse: 0.2609 valid: loss: 1.00 - noise: 0.68 - mse: 0.0143
+INFO:root:train: loss: 0.78 - noise: 0.56 - mse: 0.2314 valid: loss: 0.98 - noise: 0.67 - mse: 0.0150
+INFO:root:train: loss: 0.76 - noise: 0.55 - mse: 0.2069 valid: loss: 0.97 - noise: 0.65 - mse: 0.0143
+INFO:root:train: loss: 0.75 - noise: 0.53 - mse: 0.1832 valid: loss: 0.96 - noise: 0.64 - mse: 0.0145
+INFO:root:train: loss: 0.73 - noise: 0.52 - mse: 0.1606 valid: loss: 0.95 - noise: 0.63 - mse: 0.0139
+INFO:root:train: loss: 0.72 - noise: 0.51 - mse: 0.1411 valid: loss: 0.93 - noise: 0.62 - mse: 0.0140
+INFO:root:train: loss: 0.71 - noise: 0.49 - mse: 0.1242 valid: loss: 0.92 - noise: 0.60 - mse: 0.0140
+INFO:root:train: loss: 0.69 - noise: 0.48 - mse: 0.1070 valid: loss: 0.91 - noise: 0.59 - mse: 0.0142
+INFO:root:train: loss: 0.68 - noise: 0.47 - mse: 0.0947 valid: loss: 0.89 - noise: 0.57 - mse: 0.0137
+INFO:root:train: loss: 0.66 - noise: 0.45 - mse: 0.0831 valid: loss: 0.88 - noise: 0.56 - mse: 0.0129
+INFO:root:train: loss: 0.65 - noise: 0.44 - mse: 0.0731 valid: loss: 0.87 - noise: 0.55 - mse: 0.0132
+INFO:root:train: loss: 0.64 - noise: 0.43 - mse: 0.0626 valid: loss: 0.85 - noise: 0.54 - mse: 0.0135
+INFO:root:train: loss: 0.62 - noise: 0.42 - mse: 0.0544 valid: loss: 0.84 - noise: 0.52 - mse: 0.0140
+INFO:root:train: loss: 0.61 - noise: 0.41 - mse: 0.0500 valid: loss: 0.83 - noise: 0.51 - mse: 0.0127
+INFO:root:train: loss: 0.59 - noise: 0.40 - mse: 0.0433 valid: loss: 0.81 - noise: 0.50 - mse: 0.0135
+INFO:root:train: loss: 0.58 - noise: 0.39 - mse: 0.0400 valid: loss: 0.80 - noise: 0.48 - mse: 0.0135
+INFO:root:train: loss: 0.57 - noise: 0.37 - mse: 0.0374 valid: loss: 0.78 - noise: 0.47 - mse: 0.0133
+INFO:root:train: loss: 0.55 - noise: 0.36 - mse: 0.0345 valid: loss: 0.77 - noise: 0.46 - mse: 0.0134
+INFO:root:train: loss: 0.54 - noise: 0.35 - mse: 0.0323 valid: loss: 0.76 - noise: 0.44 - mse: 0.0129
+INFO:root:train: loss: 0.52 - noise: 0.34 - mse: 0.0315 valid: loss: 0.74 - noise: 0.42 - mse: 0.0126
+INFO:root:train: loss: 0.51 - noise: 0.33 - mse: 0.0307 valid: loss: 0.73 - noise: 0.41 - mse: 0.0126
+INFO:root:train: loss: 0.50 - noise: 0.33 - mse: 0.0300 valid: loss: 0.72 - noise: 0.40 - mse: 0.0128
+INFO:root:train: loss: 0.48 - noise: 0.32 - mse: 0.0298 valid: loss: 0.70 - noise: 0.38 - mse: 0.0129
+INFO:root:train: loss: 0.47 - noise: 0.31 - mse: 0.0294 valid: loss: 0.69 - noise: 0.37 - mse: 0.0127
+INFO:root:train: loss: 0.45 - noise: 0.30 - mse: 0.0290 valid: loss: 0.67 - noise: 0.36 - mse: 0.0134
+INFO:root:train: loss: 0.44 - noise: 0.29 - mse: 0.0291 valid: loss: 0.66 - noise: 0.34 - mse: 0.0127
+INFO:root:train: loss: 0.43 - noise: 0.28 - mse: 0.0295 valid: loss: 0.64 - noise: 0.33 - mse: 0.0130
+INFO:root:train: loss: 0.41 - noise: 0.27 - mse: 0.0289 valid: loss: 0.63 - noise: 0.32 - mse: 0.0131
+INFO:root:train: loss: 0.40 - noise: 0.27 - mse: 0.0293 valid: loss: 0.62 - noise: 0.30 - mse: 0.0130
+INFO:root:train: loss: 0.39 - noise: 0.26 - mse: 0.0296 valid: loss: 0.60 - noise: 0.29 - mse: 0.0126
+INFO:root:train: loss: 0.37 - noise: 0.25 - mse: 0.0290 valid: loss: 0.59 - noise: 0.27 - mse: 0.0133
+INFO:root:train: loss: 0.89 - noise: 0.68 - mse: 0.5155 valid: loss spt.: 1.08 - loss qry.: 0.77 - mse: 0.0177
+INFO:root:train: loss: 0.88 - noise: 0.67 - mse: 0.4680 valid: loss spt.: 1.07 - loss qry.: 0.75 - mse: 0.0168
+INFO:root:train: loss: 0.86 - noise: 0.65 - mse: 0.4293 valid: loss spt.: 1.06 - loss qry.: 0.74 - mse: 0.0153
+INFO:root:train: loss: 0.85 - noise: 0.64 - mse: 0.3911 valid: loss spt.: 1.05 - loss qry.: 0.73 - mse: 0.0161
+INFO:root:train: loss: 0.83 - noise: 0.62 - mse: 0.3525 valid: loss spt.: 1.03 - loss qry.: 0.72 - mse: 0.0151
+INFO:root:train: loss: 0.82 - noise: 0.61 - mse: 0.3182 valid: loss spt.: 1.02 - loss qry.: 0.71 - mse: 0.0167
+INFO:root:train: loss: 0.81 - noise: 0.59 - mse: 0.2839 valid: loss spt.: 1.01 - loss qry.: 0.69 - mse: 0.0153
+INFO:root:train: loss: 0.89 - noise: 0.68 - mse: 0.5105 valid: loss spt.: 1.08 - loss qry.: 0.77 - mse: 0.0163
+INFO:root:train: loss: 0.88 - noise: 0.67 - mse: 0.4689 valid: loss spt.: 1.07 - loss qry.: 0.75 - mse: 0.0159
+INFO:root:train: loss: 0.86 - noise: 0.65 - mse: 0.4300 valid: loss spt.: 1.06 - loss qry.: 0.74 - mse: 0.0159
+INFO:root:train: loss: 0.85 - noise: 0.64 - mse: 0.3883 valid: loss spt.: 1.05 - loss qry.: 0.73 - mse: 0.0159
+INFO:root:train: loss: 0.83 - noise: 0.62 - mse: 0.3545 valid: loss spt.: 1.03 - loss qry.: 0.72 - mse: 0.0155
+INFO:root:train: loss: 0.82 - noise: 0.61 - mse: 0.3188 valid: loss spt.: 1.02 - loss qry.: 0.70 - mse: 0.0147
+INFO:root:train: loss: 0.81 - noise: 0.59 - mse: 0.2866 valid: loss spt.: 1.01 - loss qry.: 0.69 - mse: 0.0157
+INFO:root:train: loss: 0.79 - noise: 0.58 - mse: 0.2592 valid: loss spt.: 1.00 - loss qry.: 0.68 - mse: 0.0148
+INFO:root:train: loss: 0.78 - noise: 0.56 - mse: 0.2309 valid: loss spt.: 0.98 - loss qry.: 0.67 - mse: 0.0151
+INFO:root:train: loss: 0.76 - noise: 0.55 - mse: 0.2063 valid: loss spt.: 0.97 - loss qry.: 0.65 - mse: 0.0144
+INFO:root:train: loss: 0.75 - noise: 0.53 - mse: 0.1832 valid: loss spt.: 0.96 - loss qry.: 0.64 - mse: 0.0145
+INFO:root:train: loss: 0.73 - noise: 0.52 - mse: 0.1644 valid: loss spt.: 0.95 - loss qry.: 0.63 - mse: 0.0141
+INFO:root:train: loss: 0.72 - noise: 0.51 - mse: 0.1409 valid: loss spt.: 0.93 - loss qry.: 0.61 - mse: 0.0144
+INFO:root:train: loss: 0.71 - noise: 0.49 - mse: 0.1232 valid: loss spt.: 0.92 - loss qry.: 0.60 - mse: 0.0133
