@@ -1,5 +1,7 @@
 # DeepPipe: Deep Pipeline Embeddings for AutoML
 
+This is the repository of the paper *Deep Pipeline Embeddings for AutoML* accepted at KDD 2023.
+
 <p align="center">
   <img src="figures/DeepPipe_architecture.png" alt="Alt Text" width="400px">
 </p>
@@ -54,7 +56,13 @@ python meta_test.py --dataset oboe --experiment_id oboe01 --test_id 100iters --n
 python meta_test.py --dataset oboe --experiment_id oboe01 --test_id 10000iters --n_iters 10000
 `
 
+## Run on Previous Checkpoints
 
+If you do not want to meta-train, you can use our checkpoints (already meta-trained DeepPipes):
+
+`
+python meta_test.py --dataset oboe --experiment_id DeepPipeTOboe
+`
 
 ## Run Meta-Test on OpenML Benchmark
 
