@@ -1,16 +1,22 @@
-# DeepPipe
+# DeepPipe: Deep Pipeline Embeddings for AutoML
 
-## Install Dependencies
+<p align="center">
+  <img src="figures/DeepPipe_architecture.png" alt="Alt Text" width="400px">
+</p>
 
-Download the repo and install requirements:
 
-- openml 0.12.2
-- torch 1.8.1
-- gpytorch 1.4.2
-- sklearn 0.24.2
-- pandas 1.2.4
-- scipy 1.7.1
-- autoprognosis
+## Prepare Environment
+Create environment on Python with Conda:
+
+`
+conda -n deep_pipe python=3.9
+`
+
+Install dependencies for running DeepPipe:
+
+`
+pip install -r requirements_deep_pipe.txt
+`
 
 ## Get the Data
 
