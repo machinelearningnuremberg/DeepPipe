@@ -1,6 +1,6 @@
 # DeepPipe: Deep Pipeline Embeddings for AutoML
 
-This is the repository of the paper *Deep Pipeline Embeddings for AutoML* accepted at KDD 2023.
+This is the repository of the [paper](https://arxiv.org/abs/2305.14009) *Deep Pipeline Embeddings for AutoML* accepted at KDD 2023.
 
 <p align="center">
   <img src="figures/DeepPipe_architecture.png" alt="Alt Text" width="400px">
