@@ -69,15 +69,16 @@ For meta-training *DeepPipe* or testing other search spaces, you can refer to th
 
 If you use this repository/package, please cite our paper:
 
-`
+```
 @article{arango2023deep,
   title={Deep Pipeline Embeddings for AutoML},
   author={Arango, Sebastian Pineda and Grabocka, Josif},
   journal={arXiv preprint arXiv:2305.14009},
   year={2023}
 }
-`
 
+
+```
 
 
 
