@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "deeppipe_api"
+version = "0.0.14"
+authors = [
+  { name="Sebastian Pineda", email="pineda@cs.uni-freiburg.com" },
+]
+description = "DeepPipe efficiently optimizes Machine Learning Pipelines using meta-learning."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies=[
+	"pandas==1.2.4",
+	"tensorboard==2.5.0",
+	"torch==1.8.1",
+	"scikit-learn==1.2.2",
+	"gpytorch==1.4.2",
+	"tqdm==4.65.0",
+	"openml==0.12.2",
+	"tensorly==0.7.0",
+	"tensorboard==2.5.0",
+	"protobuf==3.17.3",
+	"numpy==1.20.3"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+[tool.hatch.build]
+artifacts = [
+  "*.json",
+  "weights*"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/releaunifreiburg/DeepPipe"
+"Bug Tracker" = "https://github.com/releaunifreiburg/DeepPipe/issues"

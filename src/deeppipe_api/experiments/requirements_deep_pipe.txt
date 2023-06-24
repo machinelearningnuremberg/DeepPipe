@@ -1,0 +1,11 @@
+pandas==1.2.4
+tensorboard==2.5.0
+torch==1.8.1
+scikit-learn==1.2.2
+gpytorch==1.4.2
+tqdm==4.65.0
+openml==0.12.2
+tensorly==0.7.0
+tensorboard==2.5.0
+protobuf==3.17.3
+numpy==1.20.3

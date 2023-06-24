@@ -1,0 +1,1 @@
+{"experiment_id": "DeepPipeTOboe", "iterations": 10000, "aggregated_layers": 4, "encoder_layers": 0, "hidden_dim": 24, "hidden_dim_factor": 8, "kernel": "matern", "out_features": 20}

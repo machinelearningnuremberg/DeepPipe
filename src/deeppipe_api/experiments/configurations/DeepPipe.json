@@ -1,0 +1,1 @@
+{"experiment_id": "DeepPipe", "iterations": 10000, "aggregated_layers": 3, "encoder_layers": 1, "batch_size": 10, "hidden_dim": 24, "hidden_dim_factor": 2, "load_from_checkpoint": 0, "kernel": "matern", "out_features": 20, "lr": 0.0001, "pretrain_size": 1.0, "include_algorithm_encoding": 0, "dataset": "oboe", "omit_estimator": -1, "device": "cpu", "verbose": 1}

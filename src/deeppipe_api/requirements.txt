@@ -1,0 +1,6 @@
+pandas==1.2.4
+tensorboard==2.5.0
+torch==1.8.1
+scikit-learn==1.2.2
+gpytorch==1.4.2
+tqdm=4.65.0
