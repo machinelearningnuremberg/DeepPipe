@@ -41,7 +41,10 @@ print(deep_pipe.model)
 ```
 
 
-### Ensemble of Pipelines for optimizing Cross Validated Acc.
+### Ensemble of Pipelines for optimizing Cross Validated (CV) Acc.
+
+To optimize based on Cross Validated accuracy (less noisy optimization objective), you can use the snippet code below. Additionally, it is possible to ensemble the best pipelines, by using a greedy approach. 
+
 
 ```python
 import deeppipe_api.deepipe import load_data, openml, DeepPipe
