@@ -12,6 +12,7 @@
 We present an API for optimizing pipelines in scikit-learn based on the TensorOboe search space. You can use it to search for accurate pipelines or for benchmarking your Machine Learning model on tabular data. 
 
 `
+conda create -n deeppipe_env python==3.9
 pip install deeppipe_api
 `
 
@@ -21,7 +22,7 @@ We present an example using an OpenML dataset. However, it works with any tabula
 
 
 ```python
-import deeppipe_api.deepipe import load_data, openml, DeepPipe
+from deeppipe_api.deeppipe import load_data, openml, DeepPipe
 
 task_id = 37
 task = openml.tasks.get_task(task_id)
@@ -47,7 +48,7 @@ To optimize based on Cross Validated accuracy (less noisy optimization objective
 
 
 ```python
-import deeppipe_api.deepipe import load_data, openml, DeepPipe
+from deeppipe_api.deeppipe import load_data, openml, DeepPipe
 
 task = openml.tasks.get_task(task_id=37)
 X_train, X_test, y_train, y_test = load_data(task, fold=0)
