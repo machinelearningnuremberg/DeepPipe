@@ -1,6 +1,6 @@
 # DeepPipe: Deep Pipeline Embeddings for AutoML
 
-**DeepPipe** efficiently optimizes Machine Learning Pipelines using meta-learning. For detailed information, refer to our [paper](https://arxiv.org/abs/2305.14009) *Deep Pipeline Embeddings for AutoML* accepted at KDD 2023.
+*DeepPipe* efficiently optimizes Machine Learning Pipelines using meta-learning. For detailed information, refer to our [paper](https://arxiv.org/abs/2305.14009) *Deep Pipeline Embeddings for AutoML* accepted at KDD 2023.
 
 <p align="center">
   <img src="figures/DeepPipe_architecture.png" alt="Alt Text" width="400px">
@@ -62,7 +62,7 @@ print("Test acc.:", score)
 
 ## Advanced Usage
 
-For meta-training **DeepPipe** or testing other search spaces, you can refer to the folder `src/deeppipe_api/experiments/`.
+For meta-training *DeepPipe* or testing other search spaces, you can refer to the folder `src/deeppipe_api/experiments/`.
 
 
 ## Our Paper
