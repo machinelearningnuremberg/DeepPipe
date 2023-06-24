@@ -2,7 +2,7 @@
 
 This is the repository of the [paper](https://arxiv.org/abs/2305.14009) *Deep Pipeline Embeddings for AutoML* accepted at KDD 2023.
 
-Download the repo and install requirements:
+Download the repo and install requirements to run the experiment scripts:
 
 - openml 0.12.2
 - torch 1.8.1
