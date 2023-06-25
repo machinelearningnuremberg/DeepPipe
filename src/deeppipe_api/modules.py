@@ -3,7 +3,6 @@ from torch import nn
 import torch
 import numpy as np
 import time
-#from AutoMLDeepKernelGPModules import ReptileModel
 from torch.utils.tensorboard import SummaryWriter
 import gpytorch
 import logging
@@ -50,13 +49,11 @@ class MaskedMLP (nn.Module):
         self.n_list_for_concatenator = n_list_for_concatenator
         self.algorithm_domain = algorithm_domain
         self.omit_estimator = omit_estimator
-        
         self.hidden = torch.ones(1,self.hidden_dim_masked,device=device)
 
         
 
     def init_weights(self):
-
 
         for layer in self.masked_layers:
 
@@ -85,8 +82,7 @@ class MaskedMLP (nn.Module):
                     param.data.normal_(0.0,5)
 
     def freeze_masked_encoder_layer(self, high_std = True):
-
-        
+    
         ix_estimator = self.list_for_concatenator[-1][int(self.omit_estimator)]
         ix1 = self.algorithm_domain[ix_estimator]
         ix2 = self.algorithm_domain[ix_estimator+1]
@@ -109,7 +105,6 @@ class MaskedMLP (nn.Module):
                    
 
             ix1, ix2 = ix3, ix4
-
 
 
     def forward(self,x, select_mask_id = None):
@@ -159,7 +154,8 @@ class Encoder(nn.Module):
 
 class DeepPipe(nn.Module):
     def __init__(self, training_tasks, validation_tasks, pipelines, error_matrix, feature_extractor, list_for_selector, 
-                        checkpoint_path, batch_size = 1000, test_batch_size = 100, kernel = "matern", nu= 2.5 , ard = 1, device="cpu"):
+                        checkpoint_path, batch_size = 1000, test_batch_size = 100, kernel = "matern", nu= 2.5 , 
+                        ard = 1, device="cpu", debug = False):
 
         super(DeepPipe, self).__init__()
         ## GP parameters
@@ -175,12 +171,16 @@ class DeepPipe(nn.Module):
         self.kernel = kernel
         self.nu = nu
         self.ard = ard
+        self.debug = debug
 
         assert self.checkpoint_path!=None, "Provide a configuration path"
         
         os.makedirs(self.checkpoint_path,exist_ok=True)
         self.device = device
-        logging.basicConfig(filename=os.path.join(self.checkpoint_path,"log.txt"), level=logging.DEBUG)
+
+        if self.debug:
+            logging.basicConfig(filename=os.path.join(self.checkpoint_path,"log.txt"), level=logging.DEBUG)
+        
         self.feature_extractor = feature_extractor.double()
         self.get_model_likelihood_mll(self.batch_size)
         self.mse        = nn.MSELoss()
@@ -285,7 +285,8 @@ class DeepPipe(nn.Module):
                 print(e)
             self.valid_metrics.update(loss,loss2,mse,)
             
-        logging.info(self.train_metrics.report() + " " + self.valid_metrics.report())
+        if self.debug:
+            logging.info(self.train_metrics.report() + " " + self.valid_metrics.report())
         validation_results = self.valid_metrics.get()
         for k,v in validation_results.items():
             self.valid_summary_writer.add_scalar(k, v, epoch)
@@ -394,7 +395,8 @@ class ExactGPLayer(gpytorch.models.ExactGP):
 
 class DeepKernelGP(nn.Module):
 
-    def __init__(self, X, Y, kernel, nu, feature_extractor, support,log_dir, list_for_selector, ard = 1, patience = 16, device = "cpu"):
+    def __init__(self, X, Y, kernel, nu, feature_extractor, support,log_dir, list_for_selector, 
+                 ard = 1, patience = 16, device = "cpu", debug = False):
         super(DeepKernelGP, self).__init__()
         ## GP parameters
         self.device = device
@@ -405,8 +407,11 @@ class DeepKernelGP(nn.Module):
         self.ard = ard
         self.nu = nu
         self.patience = patience
+        self.debug = debug
         self.get_model_likelihood_mll(len(support))
-        logging.basicConfig(filename=log_dir, level=logging.DEBUG)
+
+        if self.debug:
+            logging.basicConfig(filename=log_dir, level=logging.DEBUG)
 
     def get_model_likelihood_mll(self, train_size):
         
@@ -474,7 +479,8 @@ class DeepKernelGP(nn.Module):
 
                 optimizer.step()
             except Exception as ada:
-                logging.info(f"Exception {ada}")
+                if self.debug:
+                    logging.info(f"Exception {ada}")
                 break
 
             if verbose:
@@ -495,7 +501,8 @@ class DeepKernelGP(nn.Module):
                 patience=0
         endtime = time.time()
         self.load_state_dict(weights)
-        logging.info(f"Current Iteration: {len(support)} | Incumbent {max(self.Y[support])} | Duration {np.round(endtime-starttime,2)} | Epochs {epoch} | Noise {self.likelihood.noise.item()}")
+        if self.debug:
+            logging.info(f"Current Iteration: {len(support)} | Incumbent {max(self.Y[support])} | Duration {np.round(endtime-starttime,2)} | Epochs {epoch} | Noise {self.likelihood.noise.item()}")
         return losses,weights,initial_weights
     
     def load_checkpoint(self, checkpoint):
