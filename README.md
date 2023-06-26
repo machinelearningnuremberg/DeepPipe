@@ -3,7 +3,7 @@
 *DeepPipe* efficiently optimizes Machine Learning Pipelines using meta-learning. For detailed information, refer to our [paper](https://arxiv.org/abs/2305.14009) *Deep Pipeline Embeddings for AutoML* accepted at KDD 2023.
 
 <p align="center">
-  <img src="figures/DeepPipe_architecture.png" alt="Alt Text" width="400px">
+  <img src="figures/DeepPipe_architecture.png" alt="DeepPipe Architecture" width="400px">
 </p>
 
 
@@ -11,10 +11,10 @@
 
 We present an API for optimizing pipelines in scikit-learn based on the TensorOboe search space. You can use it to search for accurate pipelines or for benchmarking your Machine Learning model on tabular data. 
 
-`
+```bash
 conda create -n deeppipe_env python==3.9
 pip install deeppipe_api
-`
+```
 
 ## Getting started
 
