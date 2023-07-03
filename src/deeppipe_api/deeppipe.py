@@ -40,7 +40,7 @@ class DeepPipe:
                         verbose = False,
                         create_ensemble = False,
                         ensemble_size = 10,
-                        apply_cv = False,
+                        apply_cv = True,
                         get_dummies = True):
         rootdir     = os.path.dirname(os.path.realpath(__file__))
         

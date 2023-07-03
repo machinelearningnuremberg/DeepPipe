@@ -42,9 +42,9 @@ print(deep_pipe.model)
 ```
 
 
-### Ensemble of Pipelines for optimizing Cross Validated (CV) Acc.
+### Ensemble of Pipelines
 
-To optimize based on Cross Validated accuracy (less noisy optimization objective), you can use the snippet code below. Additionally, it is possible to ensemble the best pipelines, by using a greedy approach. 
+It is possible to ensemble the best pipelines, by using a greedy approach. 
 
 
 ```python
@@ -54,7 +54,6 @@ task = openml.tasks.get_task(task_id=37)
 X_train, X_test, y_train, y_test = load_data(task, fold=0)
 deep_pipe = DeepPipe(n_iters = 50,  #bo iterations
                     time_limit = 3600, #in seconds
-                    apply_cv = True,
                     create_ensemble = False,
                     ensemble_size = 10,
                     )

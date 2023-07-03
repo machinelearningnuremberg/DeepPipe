@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "deeppipe_api"
-version = "0.1.3"
+version = "0.1.4"
 authors = [
   { name="Sebastian Pineda", email="pineda@cs.uni-freiburg.com" },
 ]
