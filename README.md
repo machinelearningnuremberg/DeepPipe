@@ -63,6 +63,10 @@ score = deep_pipe.score(X_test, y_test)
 print("Test acc.:", score) 
 ```
 
+### Collab Notebook
+
+You can try running DeepPipe in [this collab notebook](https://colab.research.google.com/drive/1uMJiHFn2hXwvm4KoJaOykz9lcXUKmY5A?usp=sharing).
+
 ## Advanced Usage
 
 For meta-training *DeepPipe* or testing other search spaces, you can refer to the folder `src/deeppipe_api/experiments/`.
