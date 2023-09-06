@@ -77,11 +77,20 @@ For meta-training *DeepPipe* or testing other search spaces, you can refer to th
 If you use this repository/package, please cite our paper:
 
 ```
-@article{arango2023deep,
-  title={Deep Pipeline Embeddings for AutoML},
-  author={Arango, Sebastian Pineda and Grabocka, Josif},
-  journal={arXiv preprint arXiv:2305.14009},
-  year={2023}
+@inproceedings{10.1145/3580305.3599303,
+author = {Pineda Arango, Sebastian and Grabocka, Josif},
+title = {Deep Pipeline Embeddings for AutoML},
+year = {2023},
+isbn = {9798400701030},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3580305.3599303},
+doi = {10.1145/3580305.3599303}
+booktitle = {Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+pages = {1907–1919},
+numpages = {13},
+location = {Long Beach, CA, USA},
+series = {KDD '23}
 }
 
 ```
