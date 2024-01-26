@@ -18,7 +18,7 @@ pip install deeppipe_api
 
 ## Getting started
 
-We present an example using an OpenML dataset. However, it works with any tabular data typed as pandas dataframe.
+We present an example using an OpenML dataset. However, it works with any tabular data typed as pandas dataframe. 
 
 
 ```python
@@ -40,7 +40,7 @@ print("Test acc.:", score)
 #print best pipeline
 print(deep_pipe.model)
 ```
-
+**Note**: When comparing with other AutoML optimizers have in mind that the search space might differ.
 
 ### Ensemble of Pipelines
 
