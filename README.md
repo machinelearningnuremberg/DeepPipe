@@ -13,6 +13,7 @@ We present an API for optimizing pipelines in scikit-learn based on the TensorOb
 
 ```bash
 conda create -n deeppipe_env python==3.9
+conda activate deeppipe_env
 pip install deeppipe_api
 ```
 
