@@ -66,7 +66,7 @@ print("Test acc.:", score)
 
 ### Collab Notebook
 
-You can try running DeepPipe in [this collab notebook](https://colab.research.google.com/drive/1uMJiHFn2hXwvm4KoJaOykz9lcXUKmY5A?usp=sharing).
+You can try running DeepPipe in [this colab notebook](https://colab.research.google.com/drive/1uMJiHFn2hXwvm4KoJaOykz9lcXUKmY5A?usp=sharing).
 
 ## Advanced Usage
 
